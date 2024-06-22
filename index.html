@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>AylNz</title>
+    <meta name="description" content="Nz个人网站,Nz">
+    <meta name="keywords" content="Nz个人网站 ,Nz">
+    <link rel="stylesheet" type="text/css" href="./css/nutssss.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<script>
+	        function updateClock() {
+	            const now = new Date();
+	            const year = now.getFullYear();
+	            const month = String(now.getMonth() + 1).padStart(2, '0');
+	            const day = String(now.getDate()).padStart(2, '0');
+	            const hours = String(now.getHours()).padStart(2, '0');
+	            const minutes = String(now.getMinutes()).padStart(2, '0');
+	            const seconds = String(now.getSeconds()).padStart(2, '0');
+	            const milliseconds = String(now.getMilliseconds()).padStart(3, '0');  
+	            const timeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}  `;
+	            document.getElementById('clock').textContent = timeString;
+	        }
+	        // 每毫秒更新一次时间
+	        setInterval(updateClock, 1);
+	    </script>
+</head>
+
+<body>
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p>I'm Nz</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+               <p>一个喜欢网络安全的咸鱼</p>
+			   <p>正在努力的学习</p>
+			   <p>以后再补充</p>
+            </div>
+            <!-- 两个按钮 -->
+            <div class="meBox-Button">
+                <a href="#">刷新</a>
+                <a href="https://github.com/Ayl-nz" target="_blank">github</a>
+            </div>
+        </div>
+
+        <!-- 伪终端介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个终端 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>lovexhj - bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+					<!-- //天气
+                    <span style="color: rgb(113, 117, 190);">root@Ayl_Nz</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./tianqi.sh</span>
+					<br />
+					<div id="clock" frameborder="0"></div>
+                    <iframe scrolling="no" src="http://v1.yiketianqi.com/api?unescape=1&version=v63&appid=&appsecret=" frameborder="0"
+                        width="350" height="24" allowtransparency="true"></iframe>
+                    <br /> -->
+					<span style="color: rgb(113, 117, 190);">root@Ayl_Nz</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./shijian.sh</span>
+					<br />
+						<p>当前时间：</p>
+						<span id="clock"></span>
+                    <br />
+                    <span style="color: rgb(255, 85, 255);">root@Ayl_Nz</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat /me.txt</span>
+                    <p>爱好计算机, 绘画, 会去学自己感兴趣的一切</p>
+                    <p>正在努力的学习Java,Python</p>
+                    <p>偶尔打CTF</p>
+                    <p>这一条路才刚刚开始</p>
+                    <p>路途中一定会有困难</p>
+                    <p>慢慢的跨过所有的困难，最后走向顶峰</p>
+                    <p></p>
+                    <p></p>
+                    <span style="color: rgb(170, 85, 255);">root@Ayl_Nz</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">sudo rm -rf /过去的自己/*</span>
+                </div>
+            </div>
+            <!-- 第二个终端 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>lovexhj - bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(255, 170, 255);">root@Ayl_Nz</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./links.sh</span>
+                    <p>我的其他站点：</p>
+                    <ul class="ul">
+                        <li>
+							<a href="https://404.nzyc.top/" target="_blan">Blog(还在搭建)</a>
+						</li>
+						<li>
+							<a href="https://hb.nzyc.top/" target="_blan">帮你百度一下</a>
+						</li>		
+						<li>
+							<a href="https://fs.nzyc.top/" target="_blan">毕业快乐</a>
+						</li>
+						<li>敬请期待</li>
+                    </ul>
+                    <span style="color: rgb(85, 255, 255);">root@Ayl_Nz</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div id="footer">
+        <p>© 2024 | <a href="https://nz.nzyc.top/" target="_blank">Ayl_NZ</a></p>
+    </div>
+</body>
+
+</html>
